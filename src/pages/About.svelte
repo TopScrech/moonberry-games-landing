@@ -1,7 +1,7 @@
 <script lang="ts">
   import Asset from '../components/Asset.svelte'
   import PageHero from '../components/PageHero.svelte'
-  import { GAME_TITLE, PRODUCT_OWNER, STUDIO_NAME, teams } from '../lib/site'
+  import { PRODUCT_OWNER, STUDIO_NAME, teams } from '../lib/site'
 </script>
 
 <PageHero title="About" image="/images/about/hero.jpg">
@@ -26,8 +26,8 @@
   <div class="owner-text">
     <h2 id="owner-title">The product owner</h2>
     <p>
-      {PRODUCT_OWNER.name} sets priorities for {GAME_TITLE} and coordinates work across departments, using player feedback and team
-      discussions to help decide what comes next
+      The mastermind behind it all… The Product Owner is responsible for the vision of the game, and making sure we achieve that goal.
+      He has personally thought of the game idea and works hard to see his invention come to life.
     </p>
   </div>
   <figure class="owner-portrait">

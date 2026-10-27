@@ -32,35 +32,35 @@ export const teams = [
     slug: 'tech', name: 'Tech',
     lead: { name: 'Pavlos', role: 'Lead Developer' },
     paragraphs: [
-      'Builds gameplay systems, implements features, and handles the technical side of development, including bug fixes and performance improvements',
+      'Every idea sounds great on paper, but Tech makes it work. They are responsible for the back end of our game. All the mechanics, fights and other fun system in the game is designed and made by the Tech department.',
     ],
   },
   {
     slug: 'design', name: 'Design',
     lead: { name: 'Ronnie', role: 'Lead Designer', portrait: ronniePortrait },
     paragraphs: [
-      'Develops mechanics, levels, and encounters, using prototypes and playtesting to refine how the game plays',
+      'Being inventive and unique is hard, that’s why we have a Design team! They are responsible for thinking about every part of our game. All the mysteries, fights and workings of the world are designed by them.',
     ],
   },
   {
     slug: 'art', name: 'Art',
     lead: { name: 'Lizet', role: 'Lead Artist', avatar: '/images/team/art/lead.gif' },
     paragraphs: [
-      'Shapes the game’s visual style and creates characters, environments, and props',
+      'We want our games to be a feast for the eyes; thus, we have our own Art department! They create the world our players can lose themselves in. They design beautiful lighting, characters and effects that will swoon anyone who lays their eyes upon them.',
     ],
   },
   {
     slug: 'audio', name: 'Audio',
     lead: { name: 'Alex Monster', role: 'Lead Audio Design', portrait: alexPortrait },
     paragraphs: [
-      'Creates music and sound effects that set the mood and help players understand what’s happening around them',
+      'To make the world really come alive, you need audio. Our Audio department is responsible for every sound in our game. From the cute npc’s running around, the punches being thrown and the creaking trees, the Audio department creates them all.',
     ],
   },
   {
     slug: 'marketing', name: 'Marketing',
     lead: { name: 'Padouk de Bie', role: 'Lead Marketing', portrait: padoukPortrait },
     paragraphs: [
-      'Shares development updates, creates content for the website and social channels, and introduces Ravenshall to new players',
+      'We want to share our game with the world, so we need marketing! This department is responsible for bringing outside eyes into our progress and games. They create content for social media, raise funding and go to events to represent our game to our audience.',
     ],
   },
 ]
