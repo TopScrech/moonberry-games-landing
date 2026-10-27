@@ -51,10 +51,10 @@
 
 <section id="premise" class="premise container">
   <p class="lede">
-    You are the new keeper of the {GAME_TITLE} hunting lodge. The last keeper left behind a crate of half-finished inventions, a
-    map with teeth marks in it, and <em>forty-one unpaid monster contracts</em>.
+    You are a hardened veteran, returning home only to find his love lost. He now helps his town, searching for and exterminating
+    creatures in the forest, secretly hoping he finds <em>his revenge hiding in the trees</em>.
   </p>
-  <p class="lede-sub">Pack strange tools, learn what lives in the marsh, and try to get home before the lamps go out.</p>
+  <p class="lede-sub">Use many different tools to investigate every clue and exterminate the threat.</p>
 </section>
 
 <section id="trailer" class="trailer container" aria-label="Trailer">
