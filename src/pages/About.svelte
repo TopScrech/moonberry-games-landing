@@ -26,12 +26,8 @@
   <div class="owner-text">
     <h2 id="owner-title">The product owner</h2>
     <p>
-      Keeping a lodge full of strange ideas pointed in the same direction is a job of its own - the product owner looks after the vision
-      for {GAME_TITLE}, helping the teams turn that vision into an adventure that feels like one connected world
-    </p>
-    <p>
-      From setting priorities to weighing player feedback, the role is about deciding what matters most for the next step, giving each team
-      room to experiment while keeping the monster hunts, inventive tools, and playful sense of unease at the heart of the game
+      {PRODUCT_OWNER.name} sets priorities for {GAME_TITLE} and coordinates work across departments, using player feedback and team
+      discussions to help decide what comes next
     </p>
   </div>
   <figure class="owner-portrait">

@@ -32,40 +32,35 @@ export const teams = [
     slug: 'tech', name: 'Tech',
     lead: { name: 'Pavlos', role: 'Lead Developer' },
     paragraphs: [
-      'Tech makes the strange inventions work, from the first pull of a lever to the moment a creature decides to chase you through the marsh',
-      'Behind every unruly tool is a carefully built system - and a fair amount of testing to make sure the surprises belong to the game',
+      'Builds gameplay systems, implements features, and handles the technical side of development, including bug fixes and performance improvements',
     ],
   },
   {
     slug: 'design', name: 'Design',
     lead: { name: 'Ronnie', role: 'Lead Designer', portrait: ronniePortrait },
     paragraphs: [
-      'Design sets the traps, leaves the clues, and gives you just enough room to come up with a terrible idea that might actually work',
-      'Every hunt brings tools, creatures, and puzzles together, inviting you to watch closely, experiment, and change your plan when something starts running at you',
+      'Develops mechanics, levels, and encounters, using prototypes and playtesting to refine how the game plays',
     ],
   },
   {
     slug: 'art', name: 'Art',
     lead: { name: 'Lizet', role: 'Lead Artist', avatar: '/images/team/art/lead.gif' },
     paragraphs: [
-      'Art gives the marsh its crooked silhouette, the lodge its cluttered warmth, and the monsters faces you might almost trust',
-      'From the smallest workshop oddity to the shapes lurking beyond the lantern light, the team balances a little charm with the feeling that something is very wrong',
+      'Shapes the game’s visual style and creates characters, environments, and props',
     ],
   },
   {
     slug: 'audio', name: 'Audio',
     lead: { name: 'Alex Monster', role: 'Lead Audio Design', portrait: alexPortrait },
     paragraphs: [
-      'Audio fills the marsh with creaking wood, humming contraptions, and noises you would rather believe came from a very small animal',
-      'Music and sound give each hunt its rhythm, offering clues, building tension, and making the quiet moments worth listening to',
+      'Creates music and sound effects that set the mood and help players understand what’s happening around them',
     ],
   },
   {
     slug: 'marketing', name: 'Marketing',
     lead: { name: 'Padouk de Bie', role: 'Lead Marketing', portrait: padoukPortrait },
     paragraphs: [
-      'Marketing opens the lodge door to the outside world, sharing glimpses of the game and introducing the peculiar things taking shape inside it',
-      'Through development stories, trailers, and conversations with players, the team helps curious newcomers find their way to the marsh - preferably before nightfall',
+      'Shares development updates, creates content for the website and social channels, and introduces Ravenshall to new players',
     ],
   },
 ]
