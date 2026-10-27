@@ -1,49 +1,74 @@
 # Design Guide
 
-Lantern-lit, hand-made, slightly wrong. A night lake framed by forest, with painted wooden signs. Brand and audience live in [PRODUCT.md](PRODUCT.md); tokens live in [src/app.css](src/app.css). Use the tokens and never hard-code a color.
+## Fonts
 
-## Rules
-1. **The world is the interface.** Illustration fills the frame and UI chrome stays small and quiet.
-2. **Nothing is straight.** Use chipped clip-paths, brush-stroke lines, torn edges and small tilts. No rounded corners (`--radius: 0`), no hairline borders, no perfect rectangles on show.
-3. **Dark only.** Night backgrounds with glow and grain. There is no light theme.
-4. **Whimsy in words, dread in the air.** Keep copy playful and the visuals restrained.
-5. **Show, don't list.** Use scenes and screenshots, not icon grids, stat badges or feature bullets.
+| | Font | Used for | Weights |
+|---|---|---|---|
+| **Primary** | **Grenze Gotisch** | Titles, headings, names | Bold (700), Extra Bold (800) |
+| **Secondary** | **Mali** | Everything else: text, buttons, menus | Regular (400), Medium (500), Bold (700) |
 
-## Color
-| Role | Token | Use |
+Don't use any other fonts
+
+## Text sizes
+Where two sizes are given, text is smaller on mobile and bigger on larger screens
+
+| Style | Font | Size |
 |---|---|---|
-| Background | `--night`, `--night-raise`, `--night-deep` | Page, raised panels, forest-dark bands |
-| Lines | `--night-line` | Brush rules and dividers |
-| Text | `--ink`, `--ink-soft` | Body text, secondary text |
-| Accent | `--wisp` (lime) | Primary CTA, links, focus ring, selection. Use it sparingly, at most one per view |
-| Warm | `--ember`, `--wax` | Lantern highlights and seals. Rare |
-| Wood | `--oak*`, `--iron`, `--parchment-ink` | Plank buttons and signs |
+| Hero title (top of homepage) | Grenze Gotisch, Extra Bold | 58 – 128 px |
+| Page title | Grenze Gotisch, Extra Bold | 55 – 102 px |
+| Section heading | Grenze Gotisch, Bold | 41 – 68 px |
+| Subheading | Grenze Gotisch, Bold | 32 – 47 px |
+| Logo | Grenze Gotisch, Extra Bold | 36 – 41 px |
+| Hero subtitle | Mali, Medium | 19 – 23 px |
+| Body text | Mali, Regular | 18 px |
+| Blog article text | Mali, Regular | 19 px |
+| Buttons & menu | Mali, Bold | 18 px |
+| Small text (dates, captions, tags) | Mali, Regular | 15 – 16 px |
 
-## Type
-- **Display:** Grenze Gotisch (`--font-display`), weight 700, line-height 1, `text-wrap: balance`. Use it for h1 to h3 only.
-- **Body:** Mali (`--font-body`), base 17px, line-height 1.6, `text-wrap: pretty`.
-- Use two families only. Keep display type short.
+Headings are packed tight (line height 1×), body text is airy (line height 1.6×, or 1.75× in articles)
 
-## Components
-- **Buttons:** `.btn` is a chipped oak plank with a slight tilt that straightens on hover. Use `.btn-wisp` for the single primary action and `.btn-ghost` for secondary actions.
-- **Links:** `.text-link` has a lime brush-stroke underline.
-- **Dividers:** `.brush-rule`. Use `--torn-top` / `--torn-bottom` for section edges.
-- **Images:** every slot keeps its aspect ratio with a blank block until the art lands.
+## Colors
 
-## Layout
-- Content is capped by `.container` (1320px max) with `--gutter` (16–72px) on the sides.
-- Design mobile first: most visitors come from a trailer link on a phone.
-- Use generous spacing and few elements per screen.
+**Backgrounds**
+| Name | Hex | Used for |
+|---|---|---|
+| Night | `#141032` | Main page background |
+| Night Raised | `#1C1B44` | Cards, tags, raised panels |
+| Night Line | `#2B3259` | Dividers and lines |
+| Forest | `#000D0A` | Darkest bands, footer |
 
-## Motion
-- Ease with `--ease-out`, at 0.2s for color/opacity and 0.3–0.6s for transforms and reveals.
-- Parallax and ambient drift should be subtle.
-- `prefers-reduced-motion` removes parallax, tilts and ambient animation.
+**Text**
+| Name | Hex | Used for |
+|---|---|---|
+| Ink | `#F0ECF7` | Titles and main text |
+| Ink Soft | `#C3C1DA` | Descriptions, captions, secondary text |
 
-## Accessibility
-- Meet WCAG 2.2 AA contrast.
-- Every element works by keyboard and shows a visible `--wisp` focus ring.
-- Focus rings must never be clipped. Put chipped shapes on pseudo-elements, not on the focusable element.
+**Accents**
+| Name | Hex | Used for |
+|---|---|---|
+| Wisp (lime) | `#B7EC69` | Main button, links, highlights (use sparingly) |
+| Wisp Light | `#CDFA92` | Wisp on hover |
+| Ember (orange) | `#F7945A` | Dates and small warm details |
+| Wax (red) | `#AC312A` | Wax seals and the play button |
 
-## Avoid
-Gore, splatter or dripping fonts · Steam-style capsule grids · SaaS hero metrics, identical icon cards and eyebrow labels · gradients on text · pure black or white · extra accent colors.
+**Wooden buttons & signs**
+| Name | Hex | Used for |
+|---|---|---|
+| Oak | `#504374` | Plank buttons |
+| Oak Edge | `#221C3C` | Plank shadow/underside |
+| Parchment | `#F4EAD5` | Text on plank buttons |
+
+**Background glows** (soft blurred light behind the page): Grape `#5A358C`, Indigo `#1D377B`, Teal `#006363`
+
+## Shapes
+- Buttons are wooden planks with chipped edges, tilted slightly
+- The header is see-through
+- Once you scroll, the header gets a dark Forest (`#000D0A`) background whose bottom edge is torn and ragged, like ripped paper, not a straight line
+- The footer starts with the same kind of torn edge
+- Underlines and dividers are drawn like a quick stroke of a paintbrush: slightly wavy, thicker in the middle and thinning out at the ends, never a perfectly even ruler line
+- Image frames aren't perfectly straight & square either
+- No rounded corners and no thin straight borders
+
+## Never
+- Pure black, pure white, or colors that aren't on this list
+- Blood, gore or dripping "horror" fonts such as Nosifer, Creepster, Eater, Butcherman
