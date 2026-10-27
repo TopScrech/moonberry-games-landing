@@ -64,8 +64,7 @@
   <div class="scene-copy container">
     <h1 id="studio-name">{STUDIO_NAME}</h1>
     <p class="pitch">
-      A student studio in Groningen making lantern-lit games about clever tools, crooked marshes, and the creatures that would rather not be
-      caught
+      A student studio in Groningen making games
     </p>
     <a class="btn btn-ghost meet" href={game.href}>Meet {GAME_TITLE}</a>
   </div>
