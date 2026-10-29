@@ -19,6 +19,13 @@ curl -fsSL https://bun.com/install | bash
 [Instruction](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
 
 ### 3. Build & run the front-end
+
+Install dependencies before running the front-end for the first time
+```
+bun install
+```
+
+Now you can run the front-end!
 ```
 bun run dev
 ```
