@@ -3,7 +3,10 @@ Front-end project
 
 ## Setup
 
-### 1. Install bun package manager
+### 1. Clone the repository
+[Instruction](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
+
+### 2. Install bun package manager
 
 Windows
 ```
@@ -14,9 +17,6 @@ macOS
 ```
 curl -fsSL https://bun.com/install | bash
 ```
-
-### 2. Clone the repository
-[Instruction](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
 
 ### 3. Build & run the front-end
 
