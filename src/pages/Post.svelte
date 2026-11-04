@@ -4,10 +4,7 @@
 
   let { slug }: { slug: string } = $props()
 
-  const index = $derived(posts.findIndex((p) => p.slug === slug))
-  const post = $derived(posts[index])
-  const newer = $derived(posts[index - 1])
-  const older = $derived(posts[index + 1])
+  const post = $derived(posts.find((p) => p.slug === slug)!)
 
   // '816 / 567' → 1.44, so paired images share one height
   const aspect = (ratio: string) => ratio.split('/').map(Number).reduce((w, h) => w / h)
@@ -26,6 +23,7 @@
     <a class="back" href="/devlog"><span aria-hidden="true">←</span> All posts</a>
     <p class="meta"><time datetime={post.date}>{formatDate(post.date)}</time></p>
     <h1>{post.title}</h1>
+    <p class="subtitle">{post.excerpt}</p>
     {#if post.tags?.length}
       <ul class="tags" aria-label="Tags">
         {#each post.tags as tag (tag)}<li>{tag}</li>{/each}
@@ -55,15 +53,6 @@
       {/if}
     {/each}
   </div>
-
-  <nav class="container narrow pager" aria-label="More posts">
-    {#if older}
-      <a href="/devlog/{older.slug}"><span class="dir">Older</span><span class="t">{older.title}</span></a>
-    {:else}<span></span>{/if}
-    {#if newer}
-      <a class="next" href="/devlog/{newer.slug}"><span class="dir">Newer</span><span class="t">{newer.title}</span></a>
-    {/if}
-  </nav>
 </article>
 
 <style>
@@ -73,6 +62,7 @@
   .back:hover { color: var(--wisp); }
   .meta { margin: 32px 0 12px; color: var(--ink-soft); font-size: 0.95rem; }
   h1 { font-size: clamp(2.6rem, 7vw, 4.75rem); }
+  .subtitle { margin: 16px 0 0; max-width: 40ch; color: var(--ink-soft); font-size: clamp(1.2rem, 2vw, 1.4rem); line-height: 1.45; }
   .tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 24px 0 0; padding: 0; list-style: none; }
   .tags li { padding: 4px 12px; background: var(--night-raise); clip-path: var(--chip-c); font-size: 0.9rem; color: var(--ink-soft); }
   .prose { margin-top: clamp(40px, 6vw, 64px); font-size: 1.125rem; line-height: 1.75; }
@@ -85,29 +75,6 @@
   .pair .cell { flex-basis: 0; min-width: 0; }
   figcaption { margin-top: 12px; text-align: center; color: var(--ink-soft); font-size: 0.95rem; }
   .prose h2 { margin: 1.8em 0 0.6em; font-size: clamp(1.7rem, 3vw, 2.2rem); }
-  .pager {
-    display: flex;
-    justify-content: space-between;
-    gap: 24px;
-    margin-top: clamp(48px, 7vw, 80px);
-    padding-top: 28px;
-    position: relative;
-  }
-  .pager::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: var(--gutter);
-    right: var(--gutter);
-    height: 5px;
-    background: var(--night-line);
-    mask: var(--brush) center / 100% 100% no-repeat;
-  }
-  .pager a { display: grid; gap: 4px; max-width: 48%; }
-  .pager .next { text-align: right; }
-  .dir { font-size: 0.85rem; font-weight: 700; color: var(--wisp); }
-  .t { font-family: var(--font-display); font-size: 1.35rem; line-height: 1.15; }
-  .pager a:hover .t { text-decoration: underline; text-underline-offset: 4px; text-decoration-thickness: 1px; }
   @media (max-width: 640px) {
     .pair .images { flex-direction: column; }
     .pair .cell { flex: none; width: 100%; }
