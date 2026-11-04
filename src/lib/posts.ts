@@ -22,6 +22,37 @@ export type Post = {
 // Newest first
 export const posts: Post[] = [
   {
+    slug: 'identity',
+    number: 2,
+    title: 'Identity',
+    date: '2026-11-04',
+    excerpt: 'Lore additions, an expanded toolkit, lots of polishing and the birth of our name.',
+    cover: '/images/blog/devblog-2/orb.webp',
+    body: [
+      'We have a huge announcement to make!',
+      'While everyone in the team has been hard at work polishing and expanding, the marketing team finalized the steps to finally give our game a name. Drumrolls, please..',
+      'Our game will be called: [Ravenshall](/games/ravenshall)!',
+      'You might have already seen it being revealed in our very first [title teaser](/games/ravenshall#trailer) posted on the website and our social media accounts.',
+      'But that’s not the only thing that has been brewing in the shadows of the forest..',
+      '## There’s lore!',
+      'For far too long has the story of our heroic adventurer just been a concept in the minds of our designers.',
+      'The forest might not be as whimsical as everyone believes it is. In fact, every now and then it has been known to show its cruel side. For some individuals this leads to life changing conditions.',
+      'As of last week, the tragedy that we call our hero’s past has been taken on and is now presented as an equally sorrowful and legendary opening cutscene in our game.',
+      '## What’s that on the toolkit?',
+      'Other than a lot of polishing, something completely new has found its way into the game files. And its origins are yet to be investigated.',
+      'We’re talking about a new tool for our adventurer that might come handy in his journey. This magical orb is said to reveal the hidden mysteries of the unexplored forest.',
+      {
+        images: [{ src: '/images/blog/devblog-2/orb.webp', alt: 'A glowing purple magical orb with a bright white light at its core', ratio: '3 / 2' }],
+      },
+      '## Coming up...',
+      'These have been an exciting two weeks with a wide variety of progress in all departments.',
+      'As for what’s next: Of course we continue expanding and polishing our existing features while further adding content that suits the investigative nature of our mystical lands.',
+      'Remember to follow us on our socials to not miss any updates on Ravenshall and also check out our [title teaser](/games/ravenshall#trailer) if you have not seen it yet!',
+      `- [Instagram](${LINKS.instagram})\n- [TikTok](${LINKS.tiktok})`,
+      '– Your Moonberry Games Team',
+    ],
+  },
+  {
     slug: 'laying-the-foundations',
     number: 1,
     title: 'The Foundations',

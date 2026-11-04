@@ -1,6 +1,7 @@
 <script lang="ts">
   import Asset from '../components/Asset.svelte'
   import PageHero from '../components/PageHero.svelte'
+  import TapPortrait from '../components/TapPortrait.svelte'
   import { PRODUCT_OWNER, STUDIO_NAME, teams } from '../lib/site'
 </script>
 
@@ -40,6 +41,8 @@
   <h2 id="team-title">Our teams</h2>
   <div class="teams">
     {#each teams as team (team.slug)}
+      {@const src = team.lead.portrait ?? `/images/team/${team.slug}/lead.png`}
+      {@const alt = `${team.lead.portrait ? 'Portrait' : 'Discord avatar'} of ${team.lead.name}, ${team.lead.role}`}
       <section class="department" aria-labelledby="team-{team.slug}">
         <div class="department-text">
           <h3 id="team-{team.slug}">{team.name}</h3>
@@ -50,12 +53,11 @@
           </div>
         </div>
         <figure class="lead">
-          <Asset
-            src={team.lead.portrait ?? team.lead.avatar ?? `/images/team/${team.slug}/lead.png`}
-            alt="{team.lead.portrait ? 'Portrait' : 'Discord avatar'} of {team.lead.name}, {team.lead.role}"
-            ratio={team.lead.avatar ? '1 / 1' : '3 / 4'}
-            cutout={!!team.lead.avatar}
-          />
+          {#if team.lead.animation}
+            <TapPortrait {src} {alt} animation={team.lead.animation} label="Toggle cat animation" ratio="3 / 4" />
+          {:else}
+            <Asset {src} {alt} ratio="3 / 4" />
+          {/if}
           <figcaption><span class="name">{team.lead.name}</span> {team.lead.role}</figcaption>
         </figure>
       </section>
