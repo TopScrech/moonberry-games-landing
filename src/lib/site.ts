@@ -44,7 +44,7 @@ export const teams = [
   },
   {
     slug: 'art', name: 'Art',
-    lead: { name: 'Lizet', role: 'Lead Artist', avatar: '/images/team/art/lead.gif' },
+    lead: { name: 'Lizet', role: 'Lead Artist', portrait: lizetPortrait, animation: '/images/team/art/lizet-cat.gif' },
     paragraphs: [
       'We want our games to be a feast for the eyes; thus, we have our own Art department! They create the world our players can lose themselves in. They design beautiful lighting, characters and effects that will swoon anyone who lays their eyes upon them.',
     ],
@@ -65,6 +65,7 @@ export const teams = [
   },
 ]
 import alexPortrait from '../assets/team/alex.webp'
+import lizetPortrait from '../assets/team/lizet.webp'
 import padoukPortrait from '../assets/team/padouk.webp'
 import ronniePortrait from '../assets/team/ronnie.webp'
 
