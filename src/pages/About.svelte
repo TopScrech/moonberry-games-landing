@@ -21,6 +21,10 @@
       a pleasant experience.
     </p>
   </div>
+  <figure class="company-photo">
+    <Asset src="/images/team/company.jpg" alt="The whole {STUDIO_NAME} team together" ratio="var(--company-photo-ratio)" />
+    <figcaption>The {STUDIO_NAME} team</figcaption>
+  </figure>
 </section>
 
 <section class="owner container" aria-labelledby="owner-title">
@@ -76,6 +80,7 @@
   .game-intro { padding-top: clamp(56px, 8vw, 120px); }
   .game-intro h2 { margin-bottom: 28px; }
   .intro-text { max-width: 72ch; color: var(--ink-soft); font-size: 1.075rem; }
+  .company-photo { --company-photo-ratio: 2 / 1; margin-top: clamp(32px, 5vw, 56px); }
   .owner-portrait { width: 100%; max-width: 400px; justify-self: center; }
   h2 { font-size: clamp(2.2rem, 5vw, 3.5rem); }
   .owner-text p { max-width: 58ch; color: var(--ink-soft); font-size: 1.075rem; }
@@ -122,5 +127,6 @@
   @media (max-width: 540px) {
     .department, .department:nth-child(even) { grid-template-columns: 1fr; gap: 24px; }
     .lead { width: 60%; max-width: 260px; }
+    .company-photo { --company-photo-ratio: 3 / 2; }
   }
 </style>
