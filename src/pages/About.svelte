@@ -23,7 +23,6 @@
   </div>
   <figure class="company-photo">
     <Asset src="/images/team/company.jpg" alt="The whole {STUDIO_NAME} team together" ratio="var(--company-photo-ratio)" />
-    <figcaption>The {STUDIO_NAME} team</figcaption>
   </figure>
 </section>
 
