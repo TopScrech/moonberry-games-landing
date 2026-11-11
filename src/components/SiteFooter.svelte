@@ -27,7 +27,7 @@
         <h2>Follow</h2>
         <a href={LINKS.instagram}>Instagram</a>
         <a href={LINKS.tiktok}>TikTok</a>
-        <a href={LINKS.presskit}>Press kit</a>
+        <a href={LINKS.youtube}>YouTube</a>
       </div>
     </nav>
   </div>

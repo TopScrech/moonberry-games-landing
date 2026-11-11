@@ -10,7 +10,7 @@ export const LINKS = {
   discord: '#',
   instagram: 'https://instagram.com/moonberry.games',
   tiktok: 'https://tiktok.com/@moonberrygames',
-  presskit: '#',
+  youtube: 'https://www.youtube.com/@MoonberryGames70',
   hosting: 'https://crunchy.host',
 }
 
