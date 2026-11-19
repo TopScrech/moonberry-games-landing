@@ -2,6 +2,7 @@
   import Asset from '../components/Asset.svelte'
   // import MerchSection from '../components/MerchSection.svelte'
   import TrailerPlayer from '../components/TrailerPlayer.svelte'
+  import ItchButton from '../components/ItchButton.svelte'
   // import WishlistButton from '../components/WishlistButton.svelte'
   import { GAME_TITLE, STUDIO_NAME, TAGLINE } from '../lib/site'
 
@@ -43,6 +44,7 @@
     <p class="tagline">{TAGLINE}</p>
     <div class="actions">
       <!-- <WishlistButton /> -->
+      <ItchButton />
       <a class="btn btn-ghost" href="#trailer">Watch the teaser</a>
     </div>
   </div>

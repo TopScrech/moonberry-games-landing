@@ -7,6 +7,7 @@ export const TAGLINE = 'Explore a rich and vibrant world as you investigate and 
 // Swap '#' for real URLs when they exist
 export const LINKS = {
   wishlist: '#',
+  itch: 'https://moonberry-games.itch.io/ravenshall',
   discord: '#',
   instagram: 'https://instagram.com/moonberry.games',
   tiktok: 'https://tiktok.com/@moonberrygames',
