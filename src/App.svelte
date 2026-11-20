@@ -11,11 +11,12 @@
   // import Merch from './pages/Merch.svelte'
   import Missing from './pages/Missing.svelte'
   import Post from './pages/Post.svelte'
+  import Presskit from './pages/Presskit.svelte'
 
   const route = $derived(resolve(location_.path))
 
   $effect(() => {
-    const titles = { home: '', game: GAME_TITLE, about: 'About', devlog: 'Dev blog', merch: 'Merch', missing: 'Lost in the woods' }
+    const titles = { home: '', game: GAME_TITLE, about: 'About', devlog: 'Dev blog', merch: 'Merch', presskit: 'PressKit', missing: 'Lost in the woods' }
     const part = route.page === 'post' ? posts.find((p) => p.slug === route.slug)?.title : titles[route.page]
     document.title = part ? `${part} · ${STUDIO_NAME}` : STUDIO_NAME
   })
@@ -38,6 +39,8 @@
         <Devlog />
       {:else if route.page === 'post'}
         <Post slug={route.slug} />
+      {:else if route.page === 'presskit'}
+        <Presskit />
       <!-- {:else if route.page === 'merch'}
         <Merch /> -->
       {:else}

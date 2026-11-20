@@ -8,6 +8,7 @@ export type Route =
   | { page: 'about' }
   | { page: 'devlog' }
   | { page: 'merch' }
+  | { page: 'presskit' }
   | { page: 'post'; slug: string }
   | { page: 'missing' }
 
@@ -21,6 +22,7 @@ export function resolve(path: string): Route {
   if (path === '/about') return { page: 'about' }
   if (path === '/devlog') return { page: 'devlog' }
   if (path === '/merch') return { page: 'merch' }
+  if (path === '/presskit') return { page: 'presskit' }
   const post = path.match(/^\/devlog\/([\w-]+)$/)
   if (post && posts.some((p) => p.slug === post[1])) return { page: 'post', slug: post[1] }
   return { page: 'missing' }

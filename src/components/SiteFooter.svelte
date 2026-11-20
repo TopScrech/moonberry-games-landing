@@ -22,6 +22,7 @@
         <a href="/">Home</a>
         <a href="/about">About</a>
         <a href="/devlog">Dev blog</a>
+        <a href="/presskit">PressKit</a>
         <!-- <a href="/merch">Merch</a> -->
       </div>
       <div>
