@@ -22,6 +22,36 @@ export type Post = {
 // Newest first
 export const posts: Post[] = [
   {
+    slug: 'the-sound-of-mystery',
+    number: 3,
+    title: 'The Sound of Mystery',
+    date: '2026-11-21',
+    excerpt: 'Content additions, a new tune and our official YouTube!',
+    cover: '/images/blog/devblog-3/puzzle-room.webp',
+    body: [
+      'Even during school break development took no stop and Ravenshall has once again been blessed with new content additions.',
+      '## It continues?',
+      'One of the things a true puzzle-solving adventure needs is.. you guessed it. Puzzles!',
+      'To further strengthen the whimsical theme of Ravenshall we decided to challenge players with another mysterious puzzle to work out.',
+      'Be sure that where this new riddle is hidden, something of a different and rather strange nature resides too.',
+      {
+        images: [{ src: '/images/blog/devblog-3/puzzle-room.webp', alt: 'A dim wooden room with shelves of glowing potion bottles and rolled-up scrolls scattered across the floor', ratio: '478 / 243' }],
+      },
+      '## Mind-boggling tunes!',
+      'This update sounds like music to our ears. Literally!',
+      'Playing experiences are now accompanied by our very own Ravenshall soundtrack.',
+      'Explore our world with a tune that immerses you deeper into the mood of our village grounds and mystical forest.',
+      '## We have a YouTube!',
+      'To conclude this short update we announce Moonberry Games’ official YouTube channel!',
+      'Make sure to subscribe, as this is the place to find important teasers, trailers and announcements about our projects!',
+      `You can find our YouTube here: [youtube.com/@MoonberryGames70](${LINKS.youtube})`,
+      'The next update is going to be essential as it’s the last time new features will be added to the project and we’re stepping closer and closer to releasing Ravenshall.',
+      'For more content also check our other socials and tune into our next blog post!',
+      `- [Instagram](${LINKS.instagram})\n- [TikTok](${LINKS.tiktok})`,
+      '– Your Moonberry Games Team',
+    ],
+  },
+  {
     slug: 'identity',
     number: 2,
     title: 'Identity',
