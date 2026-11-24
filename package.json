@@ -10,11 +10,11 @@
     "check": "bun --bun svelte-check --tsgo --tsconfig ./tsconfig.app.json && bun node_modules/@typescript/native/bin/tsc -p tsconfig.node.json"
   },
   "devDependencies": {
-    "@sveltejs/vite-plugin-svelte": "^7.3.1",
+    "@sveltejs/vite-plugin-svelte": "^7.3.2",
     "@tsconfig/svelte": "^5.0.9",
     "@types/node": "^26.6.6",
     "@typescript/native": "npm:typescript@~7.0.2",
-    "svelte": "^5.57.3",
+    "svelte": "^5.59.1",
     "svelte-check": "^4.7.8",
     "typescript": "~7.0.2",
     "vite": "^8.3.8"
