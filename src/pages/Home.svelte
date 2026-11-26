@@ -2,6 +2,7 @@
 <script lang="ts">
   import Asset from '../components/Asset.svelte'
   import FeaturedGame from '../components/FeaturedGame.svelte'
+  import FundraiserSection from '../components/FundraiserSection.svelte'
   import HomeHero from '../components/HomeHero.svelte'
   // import MerchSection from '../components/MerchSection.svelte'
   import { STUDIO_NAME, teams } from '../lib/site'
@@ -15,6 +16,8 @@
 <HomeHero />
 
 <FeaturedGame />
+
+<FundraiserSection />
 
 <section class="story container" aria-labelledby="story-title">
   <h2 id="story-title">Who are we?</h2>

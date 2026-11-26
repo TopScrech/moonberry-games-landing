@@ -8,6 +8,7 @@ export const TAGLINE = 'Explore a rich and vibrant world as you investigate and 
 export const LINKS = {
   wishlist: '#',
   itch: 'https://moonberry-games.itch.io/ravenshall',
+  gofundme: 'https://gofund.me/a2d72c7a3',
   discord: '#',
   instagram: 'https://instagram.com/moonberry.games',
   tiktok: 'https://tiktok.com/@moonberrygames',

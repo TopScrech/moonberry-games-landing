@@ -16,6 +16,7 @@
           <a href={game.href}>{game.title}</a>
         {/each}
         <a href={LINKS.itch} target="_blank" rel="noopener">itch.io</a>
+        <a href={LINKS.gofundme} target="_blank" rel="noopener">GoFundMe</a>
       </div>
       <div>
         <h2>Explore</h2>
